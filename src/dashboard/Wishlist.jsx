@@ -259,7 +259,7 @@ const Wishlist = () => {
                       handleAddToCart(item.product)
                     }
                     disabled={!item.product}
-                    className="bg-[#063352] text-white px-5 py-2.5 rounded-lg hover:bg-[#0a4570] transition-colors text-sm font-bold disabled:bg-gray-300 disabled:cursor-not-allowed"
+                    className="bg-[#063352] text-white px-5 py-2.5 cursor-pointer rounded-lg hover:bg-[#0a4570] transition-colors text-sm font-bold disabled:bg-gray-300 disabled:cursor-not-allowed"
                   >
                     ADD TO CART
                   </button>

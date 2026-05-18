@@ -60,7 +60,7 @@ const Changepassword = () => {
       setLoading(true);
 
       await axios.post(
-        "https://mayura-jewels.netlify.app/api/backend/change-password",
+        "https://mayura-jewels-backend.onrender.com/api/backend/change-password",
         formData,
         {
           headers: {
