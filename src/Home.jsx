@@ -11,16 +11,28 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
 
-  const fetchHomeData = async () => {
-    try {
-      const response = await axios.get(
-        "https://gdrbjewellery.axylotech.com/api/frontend/home-page-content",
-      );
-      setBanners(response.data.data.banners || []);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+ const fetchHomeData = async () => {
+  try {
+    const staticBanners = [
+      {
+        image:
+          "https://t3.ftcdn.net/jpg/06/59/71/56/360_F_659715679_IxWNq7PbEXkkI2LeQFigH1AvFEX9PBpn.jpg",
+      },
+      {
+        image:
+          "https://www.londongold.com/media/uploads/Lab%20Grown%20Certs/Tennis-lab_banner.jpg",
+      },
+      {
+        image:
+          "https://wallpapers.com/images/hd/jewellery-background-1920-x-1200-v2f7plnck08zqeh8.jpg",
+      },
+    ];
+
+    setBanners(staticBanners);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
   const fetchProducts = async () => {
     try {
