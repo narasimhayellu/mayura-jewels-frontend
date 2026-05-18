@@ -39,7 +39,7 @@ const Home = () => {
       const response = await axios.get(
         "https://www.anuradhaartjewellery.com/api/frontend/products/",
       );
-      setCategories(response.data.data.categories || []);
+      setCategories(response.data.categories || []);
       setProducts(response.data.products.data || []);
     } catch (error) {
       console.log(error);
@@ -136,7 +136,7 @@ const Home = () => {
             <div className="w-full h-[180px] sm:h-[350px] md:h-[500px] lg:h-[70vh] overflow-hidden">
               <img
                 className="w-full h-full object-cover object-center sm:object-cover"
-                src={`https://gdrbjewellery.axylotech.com/public/${banner.image_url}`}
+                src={`https://gdrbjewellery.axylotech.com/public/${banner.image}`}
                 alt={banner.banner_content}
               />
             </div>
