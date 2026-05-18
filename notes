@@ -1,0 +1,92 @@
+// Razorpay integration
+// data fetching and banner images and carousel display
+// created a shop component displaying images, dropdown
+// created a responsive contact page, embeedded a google map
+// Weather application fetching data from openweather api
+// movie search application fetching data from omdb api
+// todo list, quiz app, notes,tictactoe, calculator and notes application
+
+// h-screen means 100vh 
+
+// To hide specific components such as Headers,footer:
+//   const location = useLocation();
+//     const hideLayout = ["/login", "/register","/verify-otp"].includes(location.pathname);
+//     {!hideLayout && <Header/>}
+
+// For loading spinner:
+// if (loading)
+//     return(
+// <div className="flex flex-col gap-4 pb-20 items-center h-screen justify-center">
+//     <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#063352]"></div>
+//     <h1 className="animate-pulse text-xl text-[#063352] font-serif">loading...</h1>
+// </div>)
+
+// overflow-y-auto for scrollbar
+
+// gap-1 for flex for others space-y-1
+
+// cartContext
+// import { createContext, useContext, useState } from "react";
+
+// const CartContext = createContext();
+
+// export const CartProvider = ({ children }) => {
+//     const [cartItems, setCartItems] = useState([]);
+
+//     const addToCart = (product) => {
+//         setCartItems((prevItems) => {
+//             const existingItem = prevItems.find(item => item.id === product.id);
+//             if (existingItem) {
+//                 return prevItems.map(item =>
+//                     item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+//                 );
+//             }
+//             return [...prevItems, { ...product, quantity: 1 }];
+//         });
+//     };
+
+//     const updateQuantity = (id, type) => {
+//         setCartItems(prev => prev.map(item => {
+//             if (item.id === id) {
+//                 const newQty = type === 'inc' ? item.quantity + 1 : item.quantity - 1;
+//                 return { ...item, quantity: Math.max(1, newQty) };
+//             }
+//             return item;
+//         }));
+//     };
+
+//     const removeFromCart = (id) => {
+//         setCartItems(prev => prev.filter(item => item.id !== id));
+//     };
+
+//     return (
+//         <CartContext.Provider value={{ cartItems, updateQuantity, removeFromCart, addToCart }}>
+//             {children}
+//         </CartContext.Provider>
+//     );
+// };
+
+// export const useCart = () => useContext(CartContext);
+
+// for a popup:
+ 
+//         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+//           <div className="bg-white p-8 rounded-2xl shadow-2xl max-w-sm w-full text-center">
+//             <div className="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+//               <AlertCircle size={40} className="text-red-500" />
+//             </div>
+//             <h2 className="text-xl font-bold text-gray-800">Cancel this order?</h2>
+//             <p className="text-sm text-gray-500 mt-2 mb-6">Are you sure? This action cannot be undone.</p>
+//             <div className="flex gap-3">
+//               <button onClick={confirmCancel} className="flex-1 py-2.5 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Yes, cancel</button>
+//               <button onClick={() => setCancelModal({ show: false })} className="flex-1 py-2.5 bg-gray-100 text-gray-700 font-bold rounded-lg hover:bg-gray-200">No</button>
+//             </div>
+//           </div>
+//         </div>
+
+// https://www.anuradhaartjewellery.com/api/frontend/shipping-rules
+
+// https://www.anuradhaartjewellery.com/api/backend/orders/${id}
+
+
+// https://www.anuradhaartjewellery.com/api/backend/
