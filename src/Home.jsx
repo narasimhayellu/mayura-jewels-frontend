@@ -16,9 +16,7 @@ const Home = () => {
       const response = await axios.get(
         "https://gdrbjewellery.axylotech.com/api/frontend/home-page-content",
       );
-
       setBanners(response.data.data.banners || []);
-      setCategories(response.data.data.categories || []);
     } catch (error) {
       console.log(error);
     }
@@ -29,7 +27,7 @@ const Home = () => {
       const response = await axios.get(
         "https://www.anuradhaartjewellery.com/api/frontend/products/",
       );
-
+      setCategories(response.data.data.categories || []);
       setProducts(response.data.products.data || []);
     } catch (error) {
       console.log(error);
