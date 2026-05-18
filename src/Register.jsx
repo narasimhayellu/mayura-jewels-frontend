@@ -34,18 +34,18 @@ const Register = () => {
     e.preventDefault();
 
     if (input.password !== input.password_confirmation) {
-    enqueueSnackbar("Passwords do not match!", {
-      variant: "error",
-    });
-    return;
-  }
+      enqueueSnackbar("Passwords do not match!", {
+        variant: "error",
+      });
+      return;
+    }
 
-  if (/^(\d)\1+$/.test(input.phone_number)) {
-    enqueueSnackbar("Invalid mobile number", {
-      variant: "error",
-    });
-    return;
-  }
+    if (/^(\d)\1+$/.test(input.phone_number)) {
+      enqueueSnackbar("Invalid mobile number", {
+        variant: "error",
+      });
+      return;
+    }
 
     setLoading(true);
 
@@ -63,20 +63,16 @@ const Register = () => {
       console.log(response.data);
 
       navigate("/verify-otp");
-    }catch (error) {
+    } catch (error) {
+      console.log("FULL ERROR:", error);
 
-  console.log("FULL ERROR:", error);
+      console.log("BACKEND RESPONSE:", error.response);
 
-  console.log("BACKEND RESPONSE:", error.response);
-
-  console.log("BACKEND DATA:", error.response?.data);
-enqueueSnackbar(
-  error.response?.data?.message || "Registration Failed",
-  {
-    variant: "error",
-  }
-);
-} finally {
+      console.log("BACKEND DATA:", error.response?.data);
+      enqueueSnackbar(error.response?.data?.message || "Registration Failed", {
+        variant: "error",
+      });
+    } finally {
       setLoading(false);
     }
   };
