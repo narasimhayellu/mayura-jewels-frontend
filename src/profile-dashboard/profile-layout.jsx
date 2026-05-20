@@ -17,7 +17,7 @@ import {
 import { enqueueSnackbar } from "notistack";
 import { useEffect, useState } from "react";
 
-const DashboardLayout = () => {
+const ProfileLayout = () => {
   const navigate = useNavigate();
 
   const [showSidebar, setShowSidebar] = useState(false);
@@ -161,4 +161,4 @@ const DashboardLayout = () => {
   );
 };
 
-export default DashboardLayout;
+export default ProfileLayout;
