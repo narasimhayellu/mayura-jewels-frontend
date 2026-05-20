@@ -13,7 +13,7 @@ const Home = () => {
 
  const fetchHomeData = async () => {
   try {
-  const response = await axios.get("https://mayura-jewels-backend.onrender.com/api/banner");
+  const response = await axios.get("https://mayura-jewels-backend.onrender.com/api/banners");
 
     setBanners(response.data.banners);
   } catch (error) {
