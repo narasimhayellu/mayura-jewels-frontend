@@ -6,7 +6,7 @@ A modern and responsive jewelry e-commerce frontend application built using Reac
 
 # 🌐 Live Demo
 
-🔗 Backend API Live Link: https://your-backend-link.com
+🔗 Live Link: https://mayura-jewels.netlify.app
 
 ---
 
