@@ -1,16 +1,114 @@
-# React + Vite
+# 💎 Mayura Jewels Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive jewelry e-commerce frontend application built using React.js and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+✅ Responsive user interface
+✅ Product listing page
+✅ Product details page
+✅ Category & subcategory filtering
+✅ Search functionality
+✅ Price filtering
+✅ Add to cart UI
+✅ Wishlist UI
+✅ Authentication pages
+✅ Mobile responsive design
+✅ Loading states & toast notifications
+✅ Dynamic routing using React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚛️ React.js
+* ⚡ Vite
+* 🎨 Tailwind CSS
+* 🔀 React Router DOM
+* 🌐 Axios
+* 🔔 Notistack
+* 🎯 React Icons
+* 🗂️ Context API
+
+---
+
+## 📸 Pages Included
+
+* 🏠 Home Page
+* 🛍️ Shop Page
+* 💍 Product Details Page
+* ❤️ Wishlist Page
+* 🛒 Cart Page
+* 🔐 Login/Register Page
+* 📦 Orders Page
+* 📞 Contact Page
+
+---
+
+## 🔗 Routing
+
+```jsx id="wpgmk6"
+/
+ /shop
+ /product/:id
+ /cart
+ /wishlist
+ /login
+ /register
+```
+
+---
+
+## ✨ Functionalities
+
+* Product filtering
+* Product searching
+* Dynamic product rendering
+* Responsive navigation bar
+* Mobile filter sidebar
+* Cart management UI
+* Wishlist management UI
+* API integration
+* Toast notifications
+
+---
+
+## 📱 Responsive Design
+
+The application is fully responsive and optimized for:
+
+* 📱 Mobile Devices
+* 💻 Laptops
+* 🖥️ Desktop Screens
+
+---
+
+## 🌐 Deployment
+
+Frontend deployed using:
+
+* GitHub
+* Netlify
+
+---
+
+## 🧠 What I Learned
+
+* React component architecture
+* State management
+* API integration using Axios
+* Responsive UI development
+* Dynamic routing
+* Conditional rendering
+* Performance optimization
+* Frontend deployment
+
+---
+
+## 👨‍💻 Author
+
+Lakshmi Narasimha Reddy Yellu
+
+---
